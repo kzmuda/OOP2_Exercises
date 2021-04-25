@@ -7,28 +7,38 @@ namespace OOP2_Exercises
     {
         static void Main(string[] args)
         {
-            List<IWeight> objects = new List<IWeight>();
 
-            Milk milk = new Milk(4, "Milk1", 2);
-            Bread bread = new Bread(10, "Bread", DateTime.Now);
-            Participants participant = new Participants("Adam", 75);
-
-            BasketCouple basket = new BasketCouple();
-
-            basket.AddProduct(milk);
-            basket.AddProduct(bread);
-
-            //objects.Add(milk);
-            //objects.Add(bread);
-            objects.Add(participant);
-            objects.Add(basket);
-
-            Console.WriteLine(CalculateWeight.Calculate(objects));
+            MagicArray<Complex> magicArray = new MagicArray<Complex>();
+            magicArray.Add(new Complex(10, 80));
+            magicArray.Add(new Complex(20, 90));
+            magicArray.Add(new Complex(30, 100));
+            magicArray.Add(new Complex(40, 80));
 
 
+            magicArray.PrintData();
+
+            //List<IWeight> objects = new List<IWeight>();
+
+            //Milk milk = new Milk(4, "Milk1", 2);
+            //Bread bread = new Bread(10, "Bread", DateTime.Now);
+            //Participants participant = new Participants("Adam", 75);
+
+            //BasketCouple basket = new BasketCouple();
+
+            //basket.AddProduct(milk);
+            //basket.AddProduct(bread);
+
+            ////objects.Add(milk);
+            ////objects.Add(bread);
+            //objects.Add(participant);
+            //objects.Add(basket);
+
+            //Console.WriteLine(CalculateWeight.Calculate(objects));
 
 
-            Console.WriteLine(basket.CalculateValue());
+
+
+            //Console.WriteLine(basket.CalculateValue());
 
             //IDisplay display = new DisplayToFile();
             //Game game = new Game(display);         
