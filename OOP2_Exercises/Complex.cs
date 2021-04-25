@@ -5,7 +5,7 @@ using System.Text;
 
 namespace OOP2_Exercises
 {
-    class Complex: IComparable<Complex>
+    public class Complex: IComparable<Complex>
     {
         public Complex(int a , int b)
         {

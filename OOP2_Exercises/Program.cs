@@ -16,7 +16,7 @@ namespace OOP2_Exercises
             list.Add(new Complex(2, 7));
             list.Add(new Complex(4, 3));
 
-            list.Sort();
+            list.Sort(new ComplexComparatorByReal());
 
             foreach (var item in list)
             {
